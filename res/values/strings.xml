@@ -13,4 +13,7 @@
 	<string name="r_hint_1_txt">登陆账号&#8230;</string>
 	<string name="r_hint_2_txt">登陆密码&#8230;</string>
 	<string name="r_hint_3_txt">验证码&#8230;</string>
+	<string name="login_txt">登陆</string>
+	<string name="login_title">我的淘宝</string>
+	
 </resources>

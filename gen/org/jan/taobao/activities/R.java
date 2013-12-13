@@ -462,16 +462,18 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f090005;
-        public static final int exit_btn=0x7f090004;
-        public static final int indentifyingcode=0x7f090002;
-        public static final int register_btn=0x7f090003;
+        public static final int action_settings=0x7f090006;
+        public static final int exit_btn=0x7f090003;
+        public static final int indentifyingcode=0x7f090005;
+        public static final int register_btn=0x7f090002;
+        public static final int textView1=0x7f090004;
         public static final int user_r_name=0x7f090000;
         public static final int user_r_password=0x7f090001;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int register_layout=0x7f030001;
+        public static final int login_layout=0x7f030001;
+        public static final int register_layout=0x7f030002;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -482,6 +484,8 @@ public final class R {
         public static final int exit_button=0x7f060008;
         public static final int hello_world=0x7f060002;
         public static final int indentifyingcode=0x7f060006;
+        public static final int login_title=0x7f06000d;
+        public static final int login_txt=0x7f06000c;
         public static final int r_hint_1_txt=0x7f060009;
         public static final int r_hint_2_txt=0x7f06000a;
         public static final int r_hint_3_txt=0x7f06000b;
@@ -506,5 +510,6 @@ public final class R {
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f070001;
+        public static final int my_style_1=0x7f070002;
     }
 }
