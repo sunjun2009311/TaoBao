@@ -4,5 +4,13 @@
     <string name="app_name">TaoBao</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-
+	<string name="register_title">用户注册</string>
+	<string name="user_name">账号</string>
+	<string name="user_pwd">密码</string>
+	<string name="indentifyingcode">验证码</string>
+	<string name="register_button">注册</string>
+	<string name="exit_button">退出</string>
+	<string name="r_hint_1_txt">登陆账号&#8230;</string>
+	<string name="r_hint_2_txt">登陆密码&#8230;</string>
+	<string name="r_hint_3_txt">验证码&#8230;</string>
 </resources>
