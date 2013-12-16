@@ -36,6 +36,8 @@
             android:name="org.jan.taobao.activities.LoginActivity"
             android:label="@string/login_txt" >
         </activity>
+        <activity android:name="org.jan.taobao.activities.CommodiesLsitActivity" >
+        </activity>
     </application>
 
 </manifest>

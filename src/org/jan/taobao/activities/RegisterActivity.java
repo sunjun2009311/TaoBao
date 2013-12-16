@@ -1,6 +1,7 @@
 package org.jan.taobao.activities;
 
 import java.io.FileOutputStream;
+import java.util.Arrays;
 
 import org.jan.taobao.entity.TaobaoUser;
 import org.jan.taobao.utils.CheckGetUtil;
@@ -37,10 +38,10 @@ public class RegisterActivity extends Activity implements OnClickListener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		requestWindowFeature(Window.FEATURE_LEFT_ICON);
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.register_layout);
-		getWindow().setFeatureDrawableResource(Window.FEATURE_LEFT_ICON,
-				android.R.drawable.ic_menu_more);
+//		getWindow().setFeatureDrawableResource(Window.FEATURE_LEFT_ICON,
+//				android.R.drawable.ic_menu_more);
 		inieView();
 
 	}
@@ -62,12 +63,19 @@ public class RegisterActivity extends Activity implements OnClickListener {
 		checkNum = CheckGetUtil.getCheckNum();
 		mCheckView.setCheckNum(checkNum);
 		mCheckView.invaliChenkNum();
-		checkNum = mCheckView.getCheckNum();
-		mCheckCode = checkNum.toString();
-		Log.d("debug",mCheckCode);
+	
+		Log.d("debug",getCheckCode());
 //		Log.d("debug", checkNum[0]+","+checkNum[1]+","+checkNum[2]+","+checkNum[3]);
 	}
-
+	private String getCheckCode(){
+		checkNum = mCheckView.getCheckNum();
+		StringBuilder builder = new StringBuilder();
+		for(int i:checkNum){
+			builder.append(i+"");
+		}
+		mCheckCode = builder.toString();
+		return mCheckCode;
+	}
 	@Override
 	public void onClick(View source) {
 		switch (source.getId()) {
@@ -131,8 +139,17 @@ public class RegisterActivity extends Activity implements OnClickListener {
 			indentifyCode
 					.setHintTextColor(getResources().getColor(R.color.red));
 			return false;
+		}else{
+			if(identifyCode.equals(getCheckCode())){
+				return true;
+			}else{
+				indentifyCode.setText("");
+				indentifyCode.setHint("ÌîÐ´²»ÕýÈ·");
+				indentifyCode
+						.setHintTextColor(getResources().getColor(R.color.red));
+				return false;
+			}
 		}
-		return true;
 	}
 
 	/**

@@ -1,4 +1,5 @@
 package org.jan.taobao.utils;
+
 public class ConmentConfig {
 	// 验证码更新时间
 	public static final int PTEDE_TIME = 1200;

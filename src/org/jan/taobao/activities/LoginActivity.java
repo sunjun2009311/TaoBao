@@ -13,6 +13,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
@@ -31,8 +32,8 @@ public class LoginActivity extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.login_layout);
-//		getWindow().setFeatureDrawableResource(Window.FEATURE_LEFT_ICON,
-//				android.R.drawable.ic_menu_more);
+		// getWindow().setFeatureDrawableResource(Window.FEATURE_LEFT_ICON,
+		// android.R.drawable.ic_menu_more);
 		initView();
 	}
 
@@ -55,7 +56,7 @@ public class LoginActivity extends Activity implements OnClickListener {
 					if (user != null) {
 						Log.d(LOGIN_TAG, "login is succeed");
 						Intent intent = new Intent(LoginActivity.this,
-								MainActivity.class);
+								CommodiesLsitActivity.class);
 						intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 						Bundle data = new Bundle();
 						data.putParcelable("user", user);
@@ -67,15 +68,20 @@ public class LoginActivity extends Activity implements OnClickListener {
 					}
 				} else {
 					Dialog alertDialog = new AlertDialog.Builder(
-							LoginActivity.this).setTitle("提示")
+							LoginActivity.this)
+							.setTitle("提示")
 							.setMessage("你输入的账号或密码有误！")
-							.setIcon(R.drawable.ic_launcher).setPositiveButton("确定", new DialogInterface.OnClickListener() {   
-			                    @Override   
-			                    public void onClick(DialogInterface dialog, int which) { 
-			                    	userName.setText("");
-			                    	userPwd.setText("");
-			                    }   
-			                }).create();
+							.setIcon(R.drawable.ic_launcher)
+							.setPositiveButton("确定",
+									new DialogInterface.OnClickListener() {
+										@Override
+										public void onClick(
+												DialogInterface dialog,
+												int which) {
+											userName.setText("");
+											userPwd.setText("");
+										}
+									}).create();
 					alertDialog.show();
 					Log.d(LOGIN_TAG, "login is failed 1");
 				}
@@ -146,6 +152,13 @@ public class LoginActivity extends Activity implements OnClickListener {
 		Log.d(LOGIN_TAG, "do registerFun");
 		Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
 		startActivity(intent);
-//		finish();
+		// finish();
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
 	}
 }

@@ -466,35 +466,51 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
         public static final int mytaobao_login_head=0x7f020001;
         public static final int taobao_arrowhead=0x7f020002;
+        public static final int taobao_shouji_1=0x7f020003;
+        public static final int xlistview_arrow=0x7f020004;
     }
     public static final class id {
-        public static final int action_settings=0x7f090012;
-        public static final int back_btn=0x7f090009;
-        public static final int checkView=0x7f09000d;
-        public static final int indentifyingcode=0x7f09000c;
+        public static final int action_settings=0x7f09001d;
+        public static final int back_btn=0x7f09000b;
+        public static final int checkView=0x7f09000f;
+        public static final int indentifyingcode=0x7f09000e;
         public static final int itemList=0x7f090002;
-        public static final int item_image=0x7f09000f;
-        public static final int item_list_2=0x7f090004;
-        public static final int item_name=0x7f090010;
-        public static final int item_price=0x7f090011;
-        public static final int l1=0x7f090003;
-        public static final int login_btn=0x7f090007;
-        public static final int more=0x7f090008;
-        public static final int register_btn=0x7f09000e;
+        public static final int item_image=0x7f090011;
+        public static final int item_name=0x7f090012;
+        public static final int item_price=0x7f090013;
+        public static final int list1_back_btn=0x7f090004;
+        public static final int list_item_textview=0x7f090006;
+        public static final int login_btn=0x7f090009;
+        public static final int more=0x7f09000a;
+        public static final int register_btn=0x7f090010;
+        public static final int rl1=0x7f090003;
         public static final int scrollView1=0x7f090001;
         public static final int textView1=0x7f090000;
-        public static final int user_r_name=0x7f090005;
-        public static final int user_r_password=0x7f090006;
-        public static final int user_r_password1=0x7f09000a;
-        public static final int user_r_password2=0x7f09000b;
+        public static final int user_r_name=0x7f090007;
+        public static final int user_r_password=0x7f090008;
+        public static final int user_r_password1=0x7f09000c;
+        public static final int user_r_password2=0x7f09000d;
+        public static final int xListView=0x7f090005;
+        public static final int xlistview_footer_content=0x7f090014;
+        public static final int xlistview_footer_hint_textview=0x7f090016;
+        public static final int xlistview_footer_progressbar=0x7f090015;
+        public static final int xlistview_header_arrow=0x7f09001b;
+        public static final int xlistview_header_content=0x7f090017;
+        public static final int xlistview_header_hint_textview=0x7f090019;
+        public static final int xlistview_header_progressbar=0x7f09001c;
+        public static final int xlistview_header_text=0x7f090018;
+        public static final int xlistview_header_time=0x7f09001a;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int items_list_layout=0x7f030001;
-        public static final int login_layout=0x7f030002;
-        public static final int moredata=0x7f030003;
-        public static final int register_layout=0x7f030004;
-        public static final int simple_item=0x7f030005;
+        public static final int list_item=0x7f030002;
+        public static final int login_layout=0x7f030003;
+        public static final int moredata=0x7f030004;
+        public static final int register_layout=0x7f030005;
+        public static final int simple_item=0x7f030006;
+        public static final int xlistview_footer=0x7f030007;
+        public static final int xlistview_header=0x7f030008;
     }
     public static final class menu {
         public static final int main=0x7f080000;
@@ -518,6 +534,12 @@ public final class R {
         public static final int taobao_main=0x7f06000e;
         public static final int user_name=0x7f060004;
         public static final int user_pwd=0x7f060005;
+        public static final int xlistview_footer_hint_normal=0x7f060016;
+        public static final int xlistview_footer_hint_ready=0x7f060017;
+        public static final int xlistview_header_hint_loading=0x7f060014;
+        public static final int xlistview_header_hint_normal=0x7f060012;
+        public static final int xlistview_header_hint_ready=0x7f060013;
+        public static final int xlistview_header_last_time=0x7f060015;
     }
     public static final class style {
         /** 
