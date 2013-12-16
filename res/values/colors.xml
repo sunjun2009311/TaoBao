@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+	<color name="taobao_background_color">#F3F0E7</color>
+	<color name="taobao_huise">#8A8A89</color>
+	<color name="taobao_danlan">#69AEE5</color>
+	<color name="taobao_danhuise">#DADBD6</color>
     <color name="white">#FFFFFF</color>
     <!-- 白色 -->
     <color name="ivory">#FFFFF0</color>

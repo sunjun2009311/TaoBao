@@ -1,7 +1,11 @@
 package org.jan.taobao.utils;
 
+import java.io.InputStream;
 import java.io.StringWriter;
 
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Result;
 import javax.xml.transform.Transformer;
@@ -11,6 +15,7 @@ import javax.xml.transform.sax.TransformerHandler;
 import javax.xml.transform.stream.StreamResult;
 
 import org.jan.taobao.entity.TaobaoUser;
+import org.xml.sax.SAXException;
 
 public class SaxTaobaoUtils {
 	/**
@@ -49,5 +54,19 @@ public class SaxTaobaoUtils {
 		handler.endElement(uri, localName, "user");
 		handler.endDocument();
 		return writer.toString();
+	}
+	/**
+	 * 将xml字符串格式化成实体TaobaoUser对象
+	 * @param xmlStr
+	 * @return user
+	 * @throws SAXException 
+	 * @throws ParserConfigurationException 
+	 */
+	public static TaobaoUser parsetoUser(InputStream is) throws Exception{
+		SAXParserFactory factory = SAXParserFactory.newInstance();
+		SAXParser parser = factory.newSAXParser();
+		SaxXmlContentHandler handler = new SaxXmlContentHandler();
+		parser.parse(is, handler);
+		return handler.getUser();
 	}
 }

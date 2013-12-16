@@ -2,57 +2,63 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dimgrey"
+    android:background="@color/taobao_background_color"
     android:orientation="vertical" >
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/login_title"
-        android:textColor="@color/white"
-        android:textSize="30dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="40dp" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/mytaobao_login_head" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="@string/user_name"
-            android:textColor="@color/white"
-            android:textSize="18dp" />
-
-        <EditText
-            android:id="@+id/user_r_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:focusable="true"
-            android:hint="@string/r_hint_1_txt" />
+            android:gravity="center"
+            android:paddingTop="12dp"
+            android:text="My TaoBao"
+            android:textColor="@color/taobao_huise"
+            android:textSize="28sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingTop="12dp" >
+        style="@style/taobao_style1" >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="@string/user_pwd"
-            android:textColor="@color/white"
-            android:textSize="18dp" />
+        <EditText
+            android:id="@+id/user_r_name"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/taobao_danhuise"
+            android:focusable="true"
+            android:hint="@string/r_hint_1_txt"
+            android:paddingLeft="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp" >
 
         <EditText
             android:id="@+id/user_r_password"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="45dp"
+            android:background="@color/taobao_danhuise"
             android:hint="@string/r_hint_2_txt"
+            android:paddingLeft="12dp"
             android:password="true" />
     </LinearLayout>
 
@@ -60,43 +66,52 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:orientation="horizontal" 
-            android:layout_weight="1">
+            android:orientation="horizontal" >
 
             <Button
-                android:id="@+id/register_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/login_txt" />
-
-            <Button
-                android:id="@+id/exit_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/exit_button" />
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/taobao_danlan"
+                android:text="@string/login_txt"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
         </LinearLayout>
+    </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="12dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-           android:layout_gravity="center" 
-            android:orientation="vertical" 
-            android:layout_weight="3">
+            android:text="@string/sigin_tip"
+            android:layout_weight="1" />
 
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/register_button"
-                android:textColor="@color/whitesmoke"
-                android:textSize="18dp" />
-        </LinearLayout>
+        <Button
+            android:onClick="registerFun"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="@string/register_button"
+            android:background="#D5D1C5"
+            android:textColor="#676766"
+            android:layout_weight="1" />
     </LinearLayout>
 
 </LinearLayout>

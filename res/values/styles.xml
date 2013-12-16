@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
@@ -18,5 +18,14 @@
     </style>
 <style name="my_style_1" parent="@android:style/Theme.Dialog">
    
+</style>
+<style name="taobao_style1">
+    <item name="android:paddingTop">12dp</item>
+    <item name="android:paddingLeft">25dp</item>
+    <item name="android:paddingRight">25dp</item>
+    <item name="android:paddingBottom">12dp</item>
+</style>
+<style name="taobao_style2">
+ 	
 </style>
 </resources>

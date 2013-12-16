@@ -30,8 +30,11 @@
 
         <activity
             android:name="org.jan.taobao.activities.RegisterActivity"
-            android:label="@string/register_button"
-            android:theme="@style/my_style_1" >
+            android:label="@string/register_button" >
+        </activity>
+        <activity
+            android:name="org.jan.taobao.activities.LoginActivity"
+            android:label="@string/login_txt" >
         </activity>
     </application>
 
