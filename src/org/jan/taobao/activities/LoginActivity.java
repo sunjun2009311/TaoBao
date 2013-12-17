@@ -152,7 +152,6 @@ public class LoginActivity extends Activity implements OnClickListener {
 		Log.d(LOGIN_TAG, "do registerFun");
 		Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
 		startActivity(intent);
-		// finish();
 	}
 
 	@Override
