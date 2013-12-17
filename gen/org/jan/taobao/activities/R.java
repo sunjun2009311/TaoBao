@@ -479,25 +479,31 @@ public final class R {
         public static final int xlistview_arrow=0x7f02000c;
     }
     public static final class id {
-        public static final int action_settings=0x7f090026;
-        public static final int back_btn=0x7f090014;
+        public static final int action_settings=0x7f09002c;
+        public static final int back_btn=0x7f090016;
         public static final int batchManageBtn=0x7f090009;
-        public static final int checkView=0x7f090018;
-        public static final int indentifyingcode=0x7f090017;
+        public static final int cancelBtn=0x7f090013;
+        public static final int checkBox=0x7f090022;
+        public static final int checkView=0x7f09001a;
+        public static final int deleteBtn=0x7f090014;
+        public static final int indentifyingcode=0x7f090019;
         public static final int itemList=0x7f090002;
-        public static final int item_image=0x7f09001a;
-        public static final int item_name=0x7f09001b;
-        public static final int item_price=0x7f09001c;
+        public static final int item_image=0x7f09001c;
+        public static final int item_image_2=0x7f09001f;
+        public static final int item_name=0x7f09001d;
+        public static final int item_name_2=0x7f090020;
+        public static final int item_price=0x7f09001e;
+        public static final int item_price_2=0x7f090021;
         public static final int list1_back_btn=0x7f090004;
         public static final int list2_back_btn=0x7f090011;
         public static final int list_item_textview=0x7f09000d;
         public static final int login_btn=0x7f090010;
         public static final int manageList=0x7f090012;
-        public static final int more=0x7f090013;
+        public static final int more=0x7f090015;
         public static final int moreItemBtn=0x7f09000c;
         public static final int mySearch=0x7f090006;
         public static final int mySearchll=0x7f090005;
-        public static final int register_btn=0x7f090019;
+        public static final int register_btn=0x7f09001b;
         public static final int rl1=0x7f090003;
         public static final int scrollView1=0x7f090001;
         public static final int searchBtn=0x7f09000a;
@@ -506,18 +512,18 @@ public final class R {
         public static final int textView1=0x7f090000;
         public static final int user_r_name=0x7f09000e;
         public static final int user_r_password=0x7f09000f;
-        public static final int user_r_password1=0x7f090015;
-        public static final int user_r_password2=0x7f090016;
+        public static final int user_r_password1=0x7f090017;
+        public static final int user_r_password2=0x7f090018;
         public static final int xListView=0x7f090008;
-        public static final int xlistview_footer_content=0x7f09001d;
-        public static final int xlistview_footer_hint_textview=0x7f09001f;
-        public static final int xlistview_footer_progressbar=0x7f09001e;
-        public static final int xlistview_header_arrow=0x7f090024;
-        public static final int xlistview_header_content=0x7f090020;
-        public static final int xlistview_header_hint_textview=0x7f090022;
-        public static final int xlistview_header_progressbar=0x7f090025;
-        public static final int xlistview_header_text=0x7f090021;
-        public static final int xlistview_header_time=0x7f090023;
+        public static final int xlistview_footer_content=0x7f090023;
+        public static final int xlistview_footer_hint_textview=0x7f090025;
+        public static final int xlistview_footer_progressbar=0x7f090024;
+        public static final int xlistview_header_arrow=0x7f09002a;
+        public static final int xlistview_header_content=0x7f090026;
+        public static final int xlistview_header_hint_textview=0x7f090028;
+        public static final int xlistview_header_progressbar=0x7f09002b;
+        public static final int xlistview_header_text=0x7f090027;
+        public static final int xlistview_header_time=0x7f090029;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -529,8 +535,9 @@ public final class R {
         public static final int moredata=0x7f030006;
         public static final int register_layout=0x7f030007;
         public static final int simple_item=0x7f030008;
-        public static final int xlistview_footer=0x7f030009;
-        public static final int xlistview_header=0x7f03000a;
+        public static final int simple_item2=0x7f030009;
+        public static final int xlistview_footer=0x7f03000a;
+        public static final int xlistview_header=0x7f03000b;
     }
     public static final class menu {
         public static final int main=0x7f080000;

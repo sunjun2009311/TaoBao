@@ -215,7 +215,9 @@ public class CommodiesLsitActivity extends Activity implements
 				break;
 			// ÅúÁ¿²Ù×÷
 			case R.id.batchManageBtn:
-				
+				Intent intent = new Intent(CommodiesLsitActivity.this,BatchManageListActivity.class);
+				intent.putExtra("mList", mList);
+				startActivity(intent);
 				break;
 			case R.id.searchBtn:
 				if (mSearchll.isShown()) {

@@ -38,6 +38,8 @@
         </activity>
         <activity android:name="org.jan.taobao.activities.CommodiesLsitActivity" >
         </activity>
+        <activity android:name="org.jan.taobao.activities.BatchManageListActivity" >
+        </activity>
     </application>
 
 </manifest>

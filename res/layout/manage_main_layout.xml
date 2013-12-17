@@ -88,7 +88,7 @@
             android:orientation="vertical" >
 
             <ImageButton
-                android:id="@+id/searchBtn"
+                android:id="@+id/cancelBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/taobao_notchoose" />
@@ -111,7 +111,7 @@
             android:orientation="vertical" >
 
             <ImageButton
-                android:id="@+id/sortBtn"
+                android:id="@+id/deleteBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/taobao_alldelete" />
