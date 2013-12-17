@@ -215,7 +215,7 @@ public class CommodiesLsitActivity extends Activity implements
 				break;
 			// ÅúÁ¿²Ù×÷
 			case R.id.batchManageBtn:
-
+				
 				break;
 			case R.id.searchBtn:
 				if (mSearchll.isShown()) {
