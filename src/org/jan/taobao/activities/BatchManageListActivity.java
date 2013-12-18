@@ -59,7 +59,7 @@ public class BatchManageListActivity extends Activity implements
 		mCancelBtn.setOnClickListener(this);
 		mDelBtn = (ImageButton) findViewById(R.id.deleteBtn);
 		mDelBtn.setOnClickListener(this);
-		mMoreBtn = (ImageButton) findViewById(R.id.moreItemBtn);
+		mMoreBtn = (ImageButton) findViewById(R.id.batch_moreItemBtn);
 		mMoreBtn.setOnClickListener(this);
 		listView = (ListView) findViewById(R.id.manageList);
 		Intent intent = getIntent();
@@ -114,16 +114,16 @@ public class BatchManageListActivity extends Activity implements
 			break;
 		case R.id.batchManageBtn:
 			// 全选
-
 			batchMyList(true);
 			break;
 		case R.id.cancelBtn:
 			batchMyList(false);
 			break;
-		case R.id.moreItemBtn:
-
+		case R.id.batch_moreItemBtn:
+			Toast.makeText(BatchManageListActivity.this, "精彩即将呈现",
+					Toast.LENGTH_SHORT).show();
 			break;
-		case R.id.back_btn:
+		case R.id.list2_back_btn:
 			finish();
 			break;
 		default:
@@ -131,15 +131,28 @@ public class BatchManageListActivity extends Activity implements
 		}
 	}
 
+	/**
+	 * 删除勾选的数据
+	 * 
+	 * @param map
+	 *            对应的勾选索引-数据索引
+	 */
 	public void delete(Map<Integer, Boolean> map) {
 		Log.d(BATCH_TAG, "mMap.size=" + map.size());
 		Iterator<Integer> iterator = map.keySet().iterator();
+		int count = 0;
 		while (iterator.hasNext()) {
+			++count;
 			int i = iterator.next();
 			Log.d(BATCH_TAG, "index=" + i);
 			boolean isChecked = map.get(i);
+			Log.d(BATCH_TAG, "ischecked=" + isChecked);
 			if (isChecked) {
-				mList.remove(i);
+				if (count > 1) {
+					mList.remove(i - (count - 1));
+				} else {
+					mList.remove(i);
+				}
 			}
 		}
 		setListAdaptor(mList);

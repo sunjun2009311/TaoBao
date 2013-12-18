@@ -133,7 +133,7 @@
             android:orientation="vertical" >
 
             <ImageButton
-                android:id="@+id/moreItemBtn"
+                android:id="@+id/batch_moreItemBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/mytaobao_more_1" />
